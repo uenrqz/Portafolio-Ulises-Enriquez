@@ -1,1 +1,12 @@
 
+/* Transición suave al abrir/cerrar */
+.collapse {
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.nav-link:hover {
+  color: #4682B4 !important; 
+  transform: scale(1.05);
+  transition: 0.2s;
+}
