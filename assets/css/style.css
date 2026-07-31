@@ -1,4 +1,10 @@
 
+
+
+/* import para iconos de bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* Variables de color y tipografía */
 :root {
   --color-primary: #1f4e79;
   --color-primary-dark: #163a5f;
@@ -13,14 +19,17 @@
   --font-base: Arial, sans-serif;
 }
 
+/* Reset y estilos globales */
 * {
   box-sizing: border-box;
 }
 
+/* Estilos generales */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estilos para el cuerpo y elementos principales */
 body {
   margin: 0;
   background: var(--color-bg);
@@ -34,6 +43,7 @@ a {
   color: inherit;
 }
 
+/* Estilos para secciones, tarjetas y formularios */
 .page-section {
   padding: 4rem 0;
   border-bottom: 2px solid var(--color-border);
@@ -48,6 +58,7 @@ a {
   box-shadow: none !important;
 }
 
+/* Estilos para la barra de navegación y elementos relacionados */
 .navbar {
   background: var(--color-primary-dark) !important;
   border-bottom: 2px solid var(--color-border);
@@ -82,6 +93,7 @@ a {
   background: rgba(255, 255, 255, 0.08);
 }
 
+/* Estilos para la sección de héroe y elementos relacionados */
 .hero {
   background: var(--color-primary-soft);
 }
@@ -108,6 +120,7 @@ a {
   margin-bottom: 1.25rem;
 }
 
+/* Estilos para títulos, subtítulos y textos de sección */
 .section-title {
   display: inline-block;
 }
@@ -128,6 +141,7 @@ a {
   color: var(--color-text-muted);
 }
 
+/* Estilos para imágenes de perfil y botones primarios */
 .profile-image {
   width: 100%;
   height: 100%;
@@ -135,6 +149,7 @@ a {
   border-right: 2px solid var(--color-border);
 }
 
+/* Estilos para botones primarios y sus estados */
 .btn-primary {
   background: var(--color-primary-dark) !important;
   border: 2px solid var(--color-border) !important;
@@ -150,6 +165,7 @@ a {
   color: var(--color-white) !important;
 }
 
+/* Estilos para tarjetas, encabezados y cuerpos de tarjeta */
 .card {
   background: var(--color-bg);
 }
@@ -167,6 +183,7 @@ a {
   background: var(--color-bg);
 }
 
+/* Estilos para fondos suaves, elementos de lista y formularios */
 .bg-soft {
   background: var(--color-bg-alt) !important;
 }
