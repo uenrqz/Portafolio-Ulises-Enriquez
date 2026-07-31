@@ -1,12 +1,204 @@
 
-/* Transición suave al abrir/cerrar */
-.collapse {
-  transition: all 0.3s ease;
+:root {
+  --color-primary: #1f4e79;
+  --color-primary-dark: #163a5f;
+  --color-primary-soft: #eaf2f8;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7fafc;
+  --color-text: #1f1f1f;
+  --color-text-muted: #4a4a4a;
+  --color-white: #ffffff;
+  --color-border: #000000;
+  --color-hover: #5b8db8;
+  --font-base: Arial, sans-serif;
 }
 
-/* Efecto hover en los enlaces */
-.nav-link:hover {
-  color: #4682B4 !important; 
-  transform: scale(1.05);
-  transition: 0.2s;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  line-height: 1.6;
+  padding-top: 72px;
+}
+
+a {
+  color: inherit;
+}
+
+.page-section {
+  padding: 4rem 0;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.section-card,
+.excel-card,
+.card,
+.form-control {
+  border: 2px solid var(--color-border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar {
+  background: var(--color-primary-dark) !important;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--color-white) !important;
+  font-family: var(--font-base);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.navbar-toggler {
+  border: 2px solid var(--color-border) !important;
+  border-radius: 0;
+  background: var(--color-primary);
+}
+
+.nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-primary-soft) !important;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero {
+  background: var(--color-primary-soft);
+}
+
+.hero-card {
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.hero-badge,
+.section-title {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-family: var(--font-base);
+  border: 2px solid var(--color-border);
+}
+
+.hero-badge,
+.section-title {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-title {
+  display: inline-block;
+}
+
+.hero-name {
+  color: var(--color-text);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--font-base);
+}
+
+.hero-subtitle,
+.section-copy,
+.card-text,
+.list-group-item,
+.form-label,
+.form-text {
+  color: var(--color-text-muted);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 2px solid var(--color-border);
+}
+
+.btn-primary {
+  background: var(--color-primary-dark) !important;
+  border: 2px solid var(--color-border) !important;
+  color: var(--color-white) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--color-hover) !important;
+  color: var(--color-white) !important;
+}
+
+.card {
+  background: var(--color-bg);
+}
+
+.card-header {
+  background: var(--color-primary-dark) !important;
+  color: var(--color-white) !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-base);
+  border-bottom: 2px solid var(--color-border) !important;
+}
+
+.card-body {
+  background: var(--color-bg);
+}
+
+.bg-soft {
+  background: var(--color-bg-alt) !important;
+}
+
+.list-group-item {
+  background: var(--color-bg);
+  border-color: var(--color-border) !important;
+}
+
+.form-control,
+.form-control:focus {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.15rem rgba(31, 78, 121, 0.15) !important;
+}
+
+footer {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  border-top: 2px solid var(--color-border);
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .profile-image {
+    border-right: 0;
+    border-bottom: 2px solid var(--color-border);
+  }
 }

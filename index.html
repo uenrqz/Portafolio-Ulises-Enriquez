@@ -57,20 +57,23 @@
   </div>
 </nav>
 
+  <!-- FONDO GRID SCAN -->
+  <div id="gridScan"></div>
+
   <!-- Sección Home con la card de presentación -->
   <section id="home" class="container py-5" style="margin-top: 0px;">
     <div class="row justify-content-center align-items-center min-vh-100">
-      <div class="col-12 col-md-8 col-lg-6">
+      <div class="col-12 col-md-10 col-lg-8">
         <div class="card mb-3">
           <div class="row g-0 align-items-center">
             <div class="col-md-4 text-center">
               <img src="assets/img/profile/foto-perfil.jpg" class="img-fluid rounded-start" alt="Foto de perfil de Ulises Enriquez">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
-                <h1 class="card-title display-6">Ulises Enríque Pineda Enriquez</h1>
-                <h2 class="card-subtitle mb-2 text-muted h5"></h2>
-                <p class="card-text">Soy una persona apasionada por la tecnología y con mucha curiosidad.</p>
+              <div class="card-body text-center">
+                <h1 class="card-title display-6">Ulises Enríque Pineda Enríquez</h1>
+                <h2 class="card-subtitle mb-2 text-muted h5">Estudiante de Ingeniería en Sistemas</h2>
+                <p class="card-text">Soy una persona apasionada por la tecnología y con mucha curiosidad por aprender nuevas cosas.</p>
               </div>
             </div>
           </div>
@@ -79,23 +82,272 @@
     </div>
   </section>
 
+<!-- Direcciones para navegar entre secciones con navbar -->
+  <main>
 
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid px-3 px-lg-4">
+            <a class="navbar-brand" href="#home">Mi portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ms-auto gap-lg-2 text-lg-end">
+                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#biografia">Biografía</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades / Intereses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos / Pasatiempos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vision">Visión Profesional</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
+          </section>
 
+          <!-- Sección de biografía con imagen y texto alineados verticalmente -->
+          <section id="biografia" class="page-section bg-soft">
+            <div class="container">
+              <h2 class="section-title">Biografía</h2>
+              <div class="card section-card">
+                <div class="card-body p-4">
 
+        <!-- Fila con Flexbox para alinear imagen y texto verticalmente -->
+        <div class="row g-4 align-items-center">
+            
+          <!-- Columna de la imagen (izquierda en móvil, derecha en escritorio) -->
+          <div class="col-md-5 order-md-2 text-center">
+            <img 
+              src="assets/img/profile/uli-perfil.jpg" 
+              class="img-fluid rounded" 
+              alt="Ulises Enrique Pineda Enríquez - Foto de perfil"
+              style="max-width: 100%; height: auto; object-fit: cover;"
+            >
+          </div>
 
+          <!-- Columna del texto -->
+          <div class="col-md-7 order-md-1">
+            <p class="section-copy">
+            Soy Ulises o Uli, como las personas cercanas me llaman. Actualmente me encuentro en el mundo de las ventas y al mismo tiempo soy estudiante de Ingeniería en Sistemas, con una profunda curiosidad por el mundo de la tecnología.
+          </p>
+          
+          <!-- Segundo párrafo -->
+          <p>
+            Desde pequeño, me ha fascinado entender cómo funcionan las cosas y cómo puedo contribuir a crear soluciones innovadoras. Actualmente, me encuentro en un proceso de aprendizaje constante, explorando áreas como el desarrollo web y móvil, inteligencia artificial, el diseño de arquitecturas de software eficientes, así como procesos de ventas, relaciones interpersonales y estudios de mercado.
+          </p>
+          
+          <!-- Tercer párrafo  -->
+          <p>
+            Me considero una persona autodidacta, perseverante y con una gran capacidad para adaptarme a nuevos desafíos. Mi objetivo es combinar mis conocimientos técnicos, mi capacidad para relacionarme con otras personas y mi creatividad para desarrollar proyectos que generen un impacto positivo en la sociedad. Creo firmemente que la tecnología es una herramienta poderosa para resolver problemas y mejorar la calidad de vida de las personas.
+          </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
+   <!-- Habilidades / Intereses -->
 
+<!-- Sección de habilidades e intereses en una única sección -->
+          <section id="habilidades" class="page-section bg-soft">
+            <div class="container">
+              <h2 class="section-title">Habilidades e Intereses</h2>
+              <div class="row g-3">
 
+      <!-- Card 1: Desarrollo Web -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">Desarrollo</div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li><span class="badge bg-secondary me-1">Básico</span> HTML5</li>
+              <li><span class="badge bg-secondary me-1">Básico</span> CSS3 / Bootstrap 5</li>
+              <li><span class="badge bg-secondary me-1">Básico</span> JavaScript (ES6+)</li>
+              <li><span class="badge bg-secondary me-1">Básico</span> SASS/SCSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+            <!-- Card 2: Programación y Bases de Datos -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-success text-white">Programación & Bases de Datos</div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li><span class="badge bg-secondary me-1">Básico</span> Python</li>
+              <li><span class="badge bg-info me-1">Intermedio</span> Java</li>
+              <li><span class="badge bg-info me-1">Intermedio</span> MySQL</li>
+              <li><span class="badge bg-secondary me-1">Básico</span> Node.js</li>
+              <li><span class="badge bg-secondary me-1">Básico</span> MongoDB</li>
+              <li><span class="badge bg-info me-1">Intermedio</span> SQLServer</li>
+              <li><span class="badge bg-secondary me-1">Básico</span>OLAP, OLTP, DATAMINIG</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+            <!-- Card 3: Herramientas y Control de Versiones -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-dark text-white">Herramientas</div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li>✔️ Git / GitHub</li>
+              <li>✔️ Visual Studio Code</li>
+              <li>✔️ Linux / MacOs (terminal básico)</li>
+              <li>✔️ intellij IDEA </li>
+              <li>✔️ Office365</li>
+              <li>✔️ Postman</li>
+              <li>✔️ Swagger</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+            <!-- Card 4: Habilidades Blandas (Soft Skills) -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-warning text-dark">Soft Skills</div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li>✔️ Aprendizaje autodidacta</li>
+              <li>✔️ Resolución de problemas</li>
+              <li>✔️ Trabajo en equipo</li>
+              <li>✔️ Adaptabilidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5: Idiomas -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-danger text-white">Idiomas</div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li><span class="badge bg-success">Nativo</span> Español</li>
+              <li><span class="badge bg-info">Intermedio</span> Inglés (lectura/escritura técnica y conversación)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+            <!-- Card 6: Intereses / Otras áreas -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-info text-white">Intereses</div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li>✔️ Inteligencia Artificial (exploración)</li>
+              <li>✔️ Metodologías ágiles (Scrum)</li>
+              <li>✔️ Diseño de interfaces centrado en el usuario</li>
+              <li>✔️ Automatización de procesos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-  <header></header>
-  <main></main>
-  <footer></footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+          <section id="proyectos" class="page-section bg-soft">
+            <div class="container">
+              <h2 class="section-title">Proyectos y Pasatiempos</h2>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="card h-100">
+                    <div class="card-header">Proyecto</div>
+                    <div class="card-body">
+                      <p class="card-text mb-0">
+                        
+                        <h5 class="card-title"><strong></strong>“La Misericordia app”</h4></strong></h5>
+                        Proyecto web en desarrollo como donacion para el Hogar de Ancianos Varones “La Misericordia”, 
+                        ubicado en Quetzaltenango, orientado a apoyar la gestión y organización de información del hogar. El repositorio está construido 
+                        principalmente con JavaScript, complementado con Shell y PL/pgSQL, lo que refleja una solución enfocada 
+                        en automatización, manejo de datos y funcionalidad web. Este proyecto demuestra experiencia en desarrollo 
+                        de software aplicado a necesidades reales, con un enfoque práctico y social. <br> <br> <strong> 
+                            Frontend: </strong> javascript, HTML, tailwindcss, alojado en vercel <a href="https://lamisericordiaapp.vercel.app/login">Click aqui para acceder</a>  
+                            <br> <strong>Backend: </strong> PL/pgSQL, Shell, alojado en Render (de momento apagado).
+                             <br><strong>Base de datos: </strong> PostgreSQL, alojada en Render (de momento apagado).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100">
+                    <div class="card-header">Pasatiempos</div>
+                    <div class="card-body">
+                      <p class="card-text mb-0">En mi tiempo libre, aprovecho para estar con personas cercanas, valoro mucho el tiempo 
+                        que paso con ellos y, trado de estar lo mas dispobible para ellos, dedico tiempo entre semana para hacer ejercicio físico, aprender cosas nuevas y mantener
+                        balance entre mi vida personal y profesional. Admemas, algunos de mis hobbys son:</p> 
+                <ul class="list-unstyled mb-0">
+                    <br>
+                    <li>✔️ saxofonista semi profesional.</li>
+                    <li>✔️ Centro capmista en futbol 11 y defensa central en futbol 5.</li>
+                    <li>✔️ Tomar cursos en intecap.</li>
+                    <li>✔️ Salir de viaje.</li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sección de visión profesional -->
+          <section id="vision" class="page-section">
+            <div class="container">
+              <h2 class="section-title">Visión Profesional</h2>
+              <div class="card section-card">
+                <div class="card-body p-4">
+                  <p class="section-copy mb-0">
+          <strong>Mi meta profesional a largo plazo es consolidarme como un ingeniero de software de alto impacto, 
+            reconocido por mi capacidad para diseñar soluciones tecnológicas escalables y centradas en el usuario, 
+            trabajando desde cualquier lugar del mundo para corporaciones globales de primer nivel.</strong>
+        </p>
+        <p>
+          Sueño con formar parte de equipos multidisciplinarios en empresas tecnológicas líderes, donde pueda contribuir 
+          con mi experiencia en desarrollo web, inteligencia artificial y arquitectura de software, mientras aprendo de 
+          los mejores profesionales del sector. Mi objetivo es no solo crecer técnicamente, sino también desarrollar 
+          habilidades de liderazgo que me permitan influir positivamente en la cultura organizacional y en la estrategia 
+          tecnológica de las compañías para las que trabaje.
+        </p>
+        <p>
+          El trabajo remoto no es solo una modalidad laboral para mí, es una herramienta que me brinda <strong>la 
+            libertad de vivir sin las limitaciones geográficas y, sobre todo, la seguridad de alejarme de los peligros 
+           de las carreteras</strong>. Quiero poder viajar, conocer nuevas culturas y trabajar desde 
+            cualquier rincón del mundo, sin sacrificar la productividad ni la calidad de mi trabajo. Esta flexibilidad me 
+            permitirá estar presente para mi familia, brindarles estabilidad económica y emocional, y construir un entorno 
+            seguro y próspero para ellos.
+        </p>
+        <p>
+          A futuro, aspiro a formar mi propia familia, transmitiéndoles los valores del esfuerzo, la curiosidad y la 
+          resiliencia. Quiero ser un ejemplo de que, con dedicación y pasión por lo que se hace, es posible romper ciclos
+           de violencia y limitaciones, y construir una vida llena de oportunidades. Mi éxito profesional estará directamente
+            ligado a mi capacidad para generar un impacto positivo en mi entorno, tanto en el ámbito laboral como en el 
+            personal.
+        </p>
+        <p>
+          Sé que este camino requiere disciplina, aprendizaje constante y adaptabilidad. Por eso, mantenerme actualizado 
+          en las últimas tendencias tecnológicas, a cultivar mi red de contactos y a nunca dejar de lado mi esencia 
+          curiosa y autodidacta sera parte del dia a dia. <br> <br> <strong>Mi visión es clara: </strong>
+          
+          <br> ser un profesional global,
+          un padre y esposo presente, un agente de cambio en mi comunidad, demostrando que la tecnología puede ser un 
+          puente hacia un futuro más justo y seguro para todos.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- pie de pagina  -->
+
+        <footer class="py-3">
+          <div class="container text-center">
+            <small>Portafolio Ulises Enriquez</small>
+          </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+      </body>
+      </html>
