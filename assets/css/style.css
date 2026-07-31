@@ -219,3 +219,10 @@ footer {
     border-bottom: 2px solid var(--color-border);
   }
 }
+/* Estilos para el pie de página y su posición */
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10; /* Para que esté sobre el fondo Grid Scan */
+  width: 100%;
+}
