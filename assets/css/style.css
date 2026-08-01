@@ -212,3 +212,21 @@ footer {
   z-index: 10; /* Para que esté sobre el fondo Grid Scan */
   width: 100%;
 }
+
+/* En style.css */
+.link-azul {
+  color: #0948a8 !important; /* Azul Bootstrap */
+  /* o cualquier otro tono: #007bff, #1a73e8, #3b82f6, etc. */
+}
+
+/* Efecto hover para el enlace azul */
+.link-azul:hover {
+  color: #0a58ca !important; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Ajuste de altura y recorte de imágenes en tarjetas */
+.card-img-top,
+.card-img {
+  height: 450px;          /* Ajusta este valor según prefieras */
+  object-fit: cover;      /* Recorta la imagen para llenar el espacio sin deformarla */
+}
